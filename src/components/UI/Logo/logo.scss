@@ -26,8 +26,21 @@
     }
   }
 }
+
 @media (max-width: 800px) {
   .logo {
+    .toggle-menu {
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    img {
+      max-width: 220px;
+    }
     .toggle-menu {
       margin-right: 20px;
       margin-left: 10px;

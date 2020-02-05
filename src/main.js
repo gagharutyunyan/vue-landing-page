@@ -3,8 +3,6 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 
-Vue.config.productionTip = false;
-
 Vue.directive("scroll", {
   inserted: function(el, binding) {
     const handleScroll = function() {
