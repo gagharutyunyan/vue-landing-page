@@ -1,0 +1,36 @@
+.fade-enter-active,
+.fade-leave-active {
+  transform: translateX(0px);
+}
+.fade-enter,
+.fade-leave-to {
+  transform: translateX(-393px);
+}
+
+.logo {
+  display: flex;
+  .toggle-menu {
+    background: none;
+    border: none;
+    margin-right: 80px;
+    margin-left: -100px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 2030px) {
+  .logo {
+    .toggle-menu {
+      margin-right: 20px;
+      margin-left: -40px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    .toggle-menu {
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+}

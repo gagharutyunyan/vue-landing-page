@@ -1,0 +1,111 @@
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0e0e0e;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  header {
+    display: flex;
+    justify-content: center;
+    background: url("~@/assets/img/bg.png") no-repeat 50% 50%;
+    margin-bottom: 280px;
+    z-index: -2;
+  }
+
+  .header {
+    width: 1010px;
+    margin-top: 86px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -270px;
+      width: 1340px;
+      height: 897px;
+      background: url("~@/assets/img/credit-card.png") no-repeat 100% 100%;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .content {
+    header {
+      margin-bottom: 200px;
+      .header {
+        &:before {
+          right: -450px;
+          width: inherit;
+          height: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  .content {
+    .header {
+      &:before {
+        background: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1550px) {
+  .content {
+    width: 96%;
+  }
+  .wrapper {
+    display: block;
+    .header {
+      width: initial;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 95%;
+    header {
+      margin-bottom: 100px;
+    }
+    .header {
+      width: initial;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    width: 90%;
+
+    header {
+      margin-bottom: 50px;
+    }
+    .header {
+      margin-top: 20px;
+    }
+  }
+}
