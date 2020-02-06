@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     background: url("~@/assets/img/bg.png") no-repeat 50% 50%;
+    background-size: contain;
     margin-bottom: 280px;
     z-index: -2;
   }

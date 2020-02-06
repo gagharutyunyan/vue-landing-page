@@ -60,6 +60,7 @@
 
 <script>
 export default {
+  name: "Navbar",
   props: ["isOpen"],
   data() {
     return {

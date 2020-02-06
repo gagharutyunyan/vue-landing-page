@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background: url("https://i.postimg.cc/VsSG9zdT/10-1.png") no-repeat 50% 50%;
+  background-size: contain;
+  margin-bottom: 54px;
+  opacity: 0;
+  transition: all ease 0.3s;
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    width: 1184px;
+  }
+
+  &__logo {
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 26px;
+      color: #bbbbbb;
+    }
+  }
+
+  &__contacts {
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #6c6c6c;
+  }
+}

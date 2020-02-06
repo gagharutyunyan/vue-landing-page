@@ -1,6 +1,9 @@
 .checkout__section {
   display: flex;
   justify-content: center;
+  margin-bottom: 130px;
+  opacity: 0;
+  transition: all ease 0.3s;
 }
 
 .btn-order {
@@ -117,7 +120,7 @@
     }
 
     th {
-      max-width: 140px;
+      max-width: 150px;
       color: #bbbbbb;
     }
   }

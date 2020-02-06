@@ -44,7 +44,7 @@
             <table
               v-if="
                 (tableItems = isActive
-                  ? (tableItems = creditCardPrivilege)
+                  ? creditCardPrivilege
                   : debitCardPrivilege)
               "
               class="order__table"
@@ -80,6 +80,7 @@ export default {
       isActive: true,
       creditCardUrl: "https://i.postimg.cc/rw0T61Hy/Credit-Card-min.png",
       debitCardUrl: "https://i.postimg.cc/QNyY22Z5/nexus-social-debit-card.png",
+      tableItems: [],
       creditCardPrivilege: [
         {
           title: "Стоимость карты в год (руб.)",

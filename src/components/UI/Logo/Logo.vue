@@ -52,7 +52,9 @@
 
 <script>
 import NavBar from "@/components/UI/NavBar/NavBar.vue";
+
 export default {
+  name: "Logo",
   props: ["isOpen"],
   components: {
     NavBar

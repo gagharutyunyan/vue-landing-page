@@ -21,6 +21,7 @@
 <script>
 import Button from "@/components/UI/Button/Button.vue";
 export default {
+  name: "Advantages",
   data: () => ({
     advantages: [
       { title: "11%", description: "Вернем за покупки" },

@@ -29,6 +29,7 @@
 
 <script>
 export default {
+  name: "Opportunities",
   data() {
     return {
       opportunities: [

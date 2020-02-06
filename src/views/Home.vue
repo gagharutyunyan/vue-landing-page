@@ -13,9 +13,10 @@
       <main>
         <Opportunities v-scroll="170" />
         <Surprises v-scroll="950" />
-        <Assistant v-scroll="950" />
-        <Checkout />
+        <Assistant v-scroll="1850" />
+        <Checkout v-scroll="2450" />
       </main>
+      <Footer v-scroll="2600" />
     </div>
   </div>
 </template>
@@ -32,6 +33,7 @@ import Opportunities from "@/components/Blocks/Opportunities/Opportunities.vue";
 import Surprises from "@/components/Blocks/Surprises/Surprises.vue";
 import Assistant from "@/components/Blocks/Assistant/Assistant.vue";
 import Checkout from "@/components/Blocks/Checkout/Checkout.vue";
+import Footer from "@/components/Blocks/Footer/Footer.vue";
 
 export default {
   name: "home",
@@ -42,7 +44,8 @@ export default {
     Opportunities,
     Surprises,
     Assistant,
-    Checkout
+    Checkout,
+    Footer
   },
   data() {
     return { isOpen: false };

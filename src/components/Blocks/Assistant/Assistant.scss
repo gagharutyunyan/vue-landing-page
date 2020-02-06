@@ -1,5 +1,8 @@
 .section__assistant {
+  opacity: 0;
+  transition: all ease 0.3s;
   background: url("~@/assets/img/bg.png") no-repeat 50% 100%;
+  background-size: contain;
 }
 
 .assistant {
