@@ -17,7 +17,7 @@
       </div>
       <div class="order">
         <img
-          src="../../../assets/img/Credit Card.png"
+          :src="isActive ? creditCardUrl : debitCardUrl"
           alt
           class="order__card__type"
         />
@@ -38,24 +38,27 @@
               Дебетовая карта
             </button>
           </div>
-          <div class="order__type__table">
+          <div class="order__checkout">
             <Button class="btn-order" msg="Отправить заявку" />
-            <table>
-              <tr>
-                <td>Стоимость карты в год (руб.)</td>
-                <td>
-                  6 490 (без пакета услуг), 4 990 (с пакетом услуг)
-                </td>
-              </tr>
-              <tr>
-                <td>Приветственные мили (шт.)</td>
-                <td>1 000</td>
-              </tr>
-              <tr>
-                <td>Мили за покупки</td>
-                <td>5%</td>
+
+            <table
+              v-if="
+                (tableItems = isActive
+                  ? (tableItems = creditCardPrivilege)
+                  : debitCardPrivilege)
+              "
+              class="order__table"
+            >
+              <tr v-for="(item, i) in tableItems" :key="i">
+                <td>{{ item.title }}</td>
+                >
+                <th>
+                  {{ item.description }}
+                </th>
               </tr>
             </table>
+
+            <a href="#" class="all__details-link">Все подробности</a>
           </div>
         </div>
       </div>
@@ -75,6 +78,36 @@ export default {
   data() {
     return {
       isActive: true,
+      creditCardUrl: "https://i.postimg.cc/rw0T61Hy/Credit-Card-min.png",
+      debitCardUrl: "https://i.postimg.cc/QNyY22Z5/nexus-social-debit-card.png",
+      creditCardPrivilege: [
+        {
+          title: "Стоимость карты в год (руб.)",
+          description: "6 490 (без пакета услуг), 4 990 (с пакетом услуг)"
+        },
+        {
+          title: "Приветственные мили (шт.)",
+          description: "1 000"
+        },
+        {
+          title: "Мили за покупки",
+          description: "5%"
+        }
+      ],
+      debitCardPrivilege: [
+        {
+          title: "Стоимость карты в год (руб.)",
+          description: "Бесплатно"
+        },
+        {
+          title: "Приветственные мили (шт.)",
+          description: "500"
+        },
+        {
+          title: "Мили за покупки",
+          description: "2%"
+        }
+      ],
       checkout: [
         {
           title: "11%",

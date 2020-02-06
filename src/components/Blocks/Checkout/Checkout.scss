@@ -1,79 +1,195 @@
 .checkout__section {
   display: flex;
   justify-content: center;
-  .checkout {
-    width: 1110px;
-    .btn-order {
-      width: 350px;
+}
+
+.btn-order {
+  width: 350px;
+}
+
+.checkout {
+  width: 1110px;
+
+  .all__details-link {
+    font-size: 14px;
+    line-height: 26px;
+    color: #c0965c;
+    text-decoration: none;
+    border-bottom: dotted 1px #c0965c;
+  }
+
+  .about__advantages {
+    margin: 0 auto;
+    max-width: 776px;
+    margin-bottom: 86px;
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 38px;
+    color: #ffffff;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .checkout__item {
+      max-width: 255px;
+
+      &__title {
+        font-size: 36px;
+        line-height: 45px;
+        color: #c0965c;
+        span {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+        color: #6c6c6c;
+        font-weight: bold;
+        margin: 0;
+      }
     }
-    .about__advantages {
-      margin: 0 auto;
-      max-width: 776px;
-      margin-bottom: 86px;
+
+    .checkout__item:nth-child(1) {
+      max-width: 171px;
     }
-    &__title {
-      font-size: 30px;
-      line-height: 38px;
-      color: #ffffff;
+
+    .checkout__item:nth-child(2) {
+      max-width: 132px;
     }
-    &__list {
+  }
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+
+  &__card__type {
+    width: 588px;
+    height: 376px;
+  }
+
+  &__type {
+    max-width: 405px;
+
+    &__buttons {
       display: flex;
       justify-content: space-between;
-      .checkout__item {
-        max-width: 255px;
-        &__title {
-          font-size: 36px;
-          line-height: 45px;
-          color: #c0965c;
-          span {
-            font-size: 18px;
-            line-height: 23px;
-          }
-        }
-        &__description {
-          font-size: 14px;
-          line-height: 20px;
-          color: #6c6c6c;
-          font-weight: bold;
-          margin: 0;
-        }
-      }
-      .checkout__item:nth-child(1) {
-        max-width: 171px;
-      }
-      .checkout__item:nth-child(2) {
-        max-width: 132px;
+      margin-bottom: 50px;
+      max-width: 352px;
+    }
+
+    &__changer {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 23px;
+      color: #6c6c6c;
+    }
+
+    .changer__active {
+      color: #c0965c;
+    }
+  }
+
+  &__table {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 40px;
+    margin-bottom: 27px;
+    width: 405px;
+    text-align: left;
+
+    td {
+      max-width: 203px;
+      color: #6c6c6c;
+      font-weight: normal;
+      vertical-align: top;
+    }
+
+    th {
+      max-width: 140px;
+      color: #bbbbbb;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .checkout {
+    .order {
+      flex-direction: column;
+      align-items: center;
+
+      &__type {
+        margin-top: 30px;
       }
     }
   }
-  .order {
-    display: flex;
-    justify-content: space-between;
-    &__card__type {
-      width: 588px;
-      height: 376px;
+}
+
+@media (max-width: 720px) {
+  .checkout {
+    &__title {
+      text-align: center;
     }
+
+    &__list {
+      .checkout__item:nth-child(1),
+      .checkout__item:nth-child(2) {
+        max-width: initial;
+      }
+
+      .checkout__item {
+        max-width: initial;
+        margin-bottom: 25px;
+        padding: 0 5px 0 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .order {
+    &__card__type {
+      width: 450px;
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-order {
+    width: 300px;
+    font-size: 22px;
+  }
+
+  .checkout {
+    &__title {
+      font-size: 23px;
+    }
+  }
+
+  .order {
+    &__card__type {
+      width: 320px;
+      height: 200px;
+    }
+
     &__type {
-      max-width: 405px;
-      &__buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-        max-width: 352px;
-      }
-      &__changer {
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        font-size: 19px;
-        font-weight: bold;
-        line-height: 23px;
-        color: #6c6c6c;
-      }
-      .changer__active {
-        color: #c0965c;
-      }
+      max-width: 320px;
+    }
+
+    &__table {
+      max-width: 320px;
     }
   }
 }
