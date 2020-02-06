@@ -58,7 +58,7 @@ export default {
           "opacity: 1; transform: translate3d(0, -10px, 0)"
         );
       }
-      return window.scrollY > 1000;
+      return window.scrollY > 1001;
     }
   }
 };
