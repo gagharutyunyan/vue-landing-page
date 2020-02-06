@@ -14,6 +14,7 @@
         <Opportunities v-scroll="170" />
         <Surprises v-scroll="950" />
         <Assistant v-scroll="950" />
+        <Checkout />
       </main>
     </div>
   </div>
@@ -30,6 +31,7 @@ import Advantages from "@/components/Blocks/Advantages/Advantages.vue";
 import Opportunities from "@/components/Blocks/Opportunities/Opportunities.vue";
 import Surprises from "@/components/Blocks/Surprises/Surprises.vue";
 import Assistant from "@/components/Blocks/Assistant/Assistant.vue";
+import Checkout from "@/components/Blocks/Checkout/Checkout.vue";
 
 export default {
   name: "home",
@@ -39,7 +41,8 @@ export default {
     Advantages,
     Opportunities,
     Surprises,
-    Assistant
+    Assistant,
+    Checkout
   },
   data() {
     return { isOpen: false };

@@ -1,0 +1,79 @@
+.checkout__section {
+  display: flex;
+  justify-content: center;
+  .checkout {
+    width: 1110px;
+    .btn-order {
+      width: 350px;
+    }
+    .about__advantages {
+      margin: 0 auto;
+      max-width: 776px;
+      margin-bottom: 86px;
+    }
+    &__title {
+      font-size: 30px;
+      line-height: 38px;
+      color: #ffffff;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      .checkout__item {
+        max-width: 255px;
+        &__title {
+          font-size: 36px;
+          line-height: 45px;
+          color: #c0965c;
+          span {
+            font-size: 18px;
+            line-height: 23px;
+          }
+        }
+        &__description {
+          font-size: 14px;
+          line-height: 20px;
+          color: #6c6c6c;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+      .checkout__item:nth-child(1) {
+        max-width: 171px;
+      }
+      .checkout__item:nth-child(2) {
+        max-width: 132px;
+      }
+    }
+  }
+  .order {
+    display: flex;
+    justify-content: space-between;
+    &__card__type {
+      width: 588px;
+      height: 376px;
+    }
+    &__type {
+      max-width: 405px;
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        max-width: 352px;
+      }
+      &__changer {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 23px;
+        color: #6c6c6c;
+      }
+      .changer__active {
+        color: #c0965c;
+      }
+    }
+  }
+}

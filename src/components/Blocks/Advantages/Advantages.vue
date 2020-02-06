@@ -1,7 +1,8 @@
 <template>
   <div class="advantages">
     <h1 class="advantages__title">
-      Твоя премиум карта <span>Лучшая карта для любителей путешествий</span>
+      Твоя премиум карта
+      <span>Лучшая карта для любителей путешествий</span>
     </h1>
     <ul class="advantages__items">
       <li class="advantages__item" v-for="(item, i) in advantages" :key="i">
@@ -9,7 +10,7 @@
         <p class="item__description">{{ item.description }}</p>
       </li>
     </ul>
-    <Button className="btn-advantages" msg="Заказать сейчас" />
+    <Button class="btn-advantages" msg="Заказать сейчас" />
   </div>
 </template>
 

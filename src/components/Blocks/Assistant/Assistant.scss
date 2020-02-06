@@ -23,27 +23,77 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    &__img {
+      width: 374px;
+      height: 551px;
+    }
+    &__function {
+      margin-bottom: 30px;
+    }
+    .assistant__function__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .list__item {
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        max-width: 198px;
+        margin-bottom: 60px;
+        .icon {
+          width: 44px;
+          height: 47px;
+          position: absolute;
+          left: -63px;
+          top: 5px;
+        }
+        .function__list--vector {
+          background: url("https://i.postimg.cc/j5Kzr9wT/Vector-3.png")
+            no-repeat;
+        }
+        .function__list--vector-1 {
+          background: url("https://i.postimg.cc/Dz1qHFz5/Vector-2.png")
+            no-repeat;
+        }
+        .function__list--vector-2 {
+          background: url("https://i.postimg.cc/g2CVgrGn/Vector-1.png")
+            no-repeat;
+        }
+        .function__list--vector-3 {
+          background: url("https://i.postimg.cc/g2Xyy3FC/Vector.png") no-repeat;
+        }
+      }
+    }
   }
+}
 
-  &__content__img {
-    width: 374px;
-    height: 551px;
+@media (max-width: 720px) {
+  .assistant {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      &__function {
+        .list__item {
+          margin-left: 63px;
+        }
+      }
+      &__img {
+        width: 340px;
+        height: 510px;
+        margin-bottom: 40px;
+      }
+    }
   }
+}
 
-  &__content__function {
-    margin-bottom: 30px;
-  }
-
-  &__function__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .list__item {
-      font-size: 14px;
-      line-height: 20px;
-      color: #ffffff;
-      max-width: 198px;
-      margin-bottom: 60px;
+@media (max-width: 550px) {
+  .assistant {
+    &__content {
+      &__img {
+        width: 240px;
+        height: 365px;
+      }
     }
   }
 }

@@ -2,8 +2,12 @@
   <section class="section__assistant">
     <div class="assistant">
       <h1 class="assistant__title">
-        Персональный помощник<br />
-        <span>Бесплатно для владельцев <b>CARD PLUS</b></span>
+        Персональный помощник
+        <br />
+        <span>
+          Бесплатно для владельцев
+          <b>CARD PLUS</b>
+        </span>
       </h1>
       <div class="assistant__content">
         <img
@@ -15,7 +19,7 @@
           <ul class="assistant__function__list">
             <li class="list__item" v-for="(item, i) in function__list" :key="i">
               {{ item.description }}
-              <span class="icon"></span>
+              <span class="icon" :class="item.icon"></span>
             </li>
           </ul>
         </div>
@@ -36,21 +40,21 @@ export default {
       function__list: [
         {
           description: "Организует встречи, найдет гидов и переводчиков",
-          icon: "vector-1"
+          icon: "function__list--vector"
         },
         {
           description:
             "Спланирует поездку по самым интересным местам вашего отдыха",
-          icon: "vector-1"
+          icon: "function__list--vector-1"
         },
         {
           description:
             "Достанет билеты на мероприятия, даже если их уже нет в продаже",
-          icon: "vector-1"
+          icon: "function__list--vector-2"
         },
         {
           description: "Закажет столик в ресторане, клубе или кафе",
-          icon: "vector-1"
+          icon: "function__list--vector-3"
         }
       ]
     };
