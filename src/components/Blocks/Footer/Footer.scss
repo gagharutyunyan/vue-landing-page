@@ -9,6 +9,7 @@
   &__section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1184px;
   }
 
@@ -32,5 +33,26 @@
     font-size: 14px;
     line-height: 30px;
     color: #6c6c6c;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer {
+    &__section {
+      align-items: center;
+      max-width: 550px;
+    }
+
+    &__logo {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    &__logo {
+      width: 260px;
+    }
   }
 }

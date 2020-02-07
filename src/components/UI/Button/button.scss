@@ -7,4 +7,9 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 24px;
+  &:disabled,
+  &:disabled:hover {
+    background: #191919;
+    color: #333333;
+  }
 }

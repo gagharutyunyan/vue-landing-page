@@ -10,7 +10,9 @@
         <p class="item__description">{{ item.description }}</p>
       </li>
     </ul>
-    <Button class="btn-advantages" msg="Заказать сейчас" />
+    <router-link to="/popup-form"
+      ><Button class="btn-advantages" msg="Заказать сейчас"
+    /></router-link>
   </div>
 </template>
 

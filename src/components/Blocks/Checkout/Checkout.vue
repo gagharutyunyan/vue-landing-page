@@ -39,8 +39,9 @@
             </button>
           </div>
           <div class="order__checkout">
-            <Button class="btn-order" msg="Отправить заявку" />
-
+            <router-link to="/popup-form">
+              <Button class="btn-order" msg="Отправить заявку" />
+            </router-link>
             <table
               v-if="
                 (tableItems = isActive

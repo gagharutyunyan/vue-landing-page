@@ -1,7 +1,10 @@
 import Vue from "vue";
+import Vuelidate from "vuelidate";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
+
+Vue.use(Vuelidate);
 
 Vue.directive("scroll", {
   inserted: function(el, binding) {
